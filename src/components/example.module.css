@@ -1,5 +1,10 @@
 .example {
-    background: linear-gradient(54deg, rgb(210, 255, 31) 0.00%, rgb(123, 194, 85) 45.00%, rgb(227, 144, 43) 100.00%);
+    background: linear-gradient(
+        54deg,
+        rgb(210, 255, 31) 0%,
+        rgb(123, 194, 85) 45%,
+        rgb(227, 144, 43) 100%
+    );
     width: 200px;
     height: 100px;
     margin: auto;
