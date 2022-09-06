@@ -2,13 +2,15 @@
     "name": "dummy",
     "version": "1.0.0",
     "scripts": {
-        "dev": "vite",
         "build": "tsc && vite build",
         "preview": "vite preview",
-        "eslint": "npx eslint src",
-        "eslint:fix": "npx eslint --fix",
-        "prettier": "prettier src --check",
-        "prettier:fix": "prettier src --write"
+        "dev": "vite",
+        "server": "cross-env PORT=3000 ts-node-dev --respawn stub/index.ts",
+        "start": "concurrently \"npm run server\" \"npm run dev\"",
+        "eslint": "eslint src stub",
+        "eslint:fix": "eslint --fix",
+        "prettier": "prettier src stub --check",
+        "prettier:fix": "prettier src stub --write"
     },
     "dependencies": {
         "classnames": "2.3.1",
@@ -19,17 +21,22 @@
     "devDependencies": {
         "@commitlint/cli": "17.1.1",
         "@commitlint/config-conventional": "17.1.0",
+        "@fastify/cors": "8.1.0",
         "@types/react": "18.0.17",
         "@types/react-dom": "18.0.6",
         "@typescript-eslint/eslint-plugin": "5.35.1",
         "@typescript-eslint/parser": "5.35.1",
         "@vitejs/plugin-react": "2.1.0",
         "commitizen": "4.2.5",
+        "concurrently": "7.3.0",
+        "cross-env": "7.0.3",
         "cz-conventional-changelog": "3.3.0",
         "eslint": "7.18.0",
         "eslint-config-prettier": "8.5.0",
+        "fastify": "4.5.3",
         "generate-changelog": "1.8.0",
         "prettier": "2.7.1",
+        "ts-node-dev": "2.0.0",
         "typescript": "4.8.2",
         "vite": "3.1.0"
     },

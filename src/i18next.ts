@@ -7,13 +7,12 @@ const resources = {
     }
 }
 
-i18next
-    .init({
-        resources,
-        lng: 'ru',
-        interpolation: {
-            escapeValue: false
-        }
-    })
+i18next.init({
+    resources,
+    lng: 'ru',
+    interpolation: {
+        escapeValue: false
+    }
+})
 
 export default i18next
