@@ -9,5 +9,8 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module'
     },
-    plugins: ['@typescript-eslint']
+    plugins: ['@typescript-eslint'],
+    rules: {
+        "@typescript-eslint/explicit-function-return-type": "warn"
+    }
 }

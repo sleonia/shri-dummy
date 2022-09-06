@@ -1,0 +1,13 @@
+.example {
+    background: linear-gradient(54deg, rgb(210, 255, 31) 0.00%, rgb(123, 194, 85) 45.00%, rgb(227, 144, 43) 100.00%);
+    width: 200px;
+    height: 100px;
+    margin: auto;
+}
+
+.example p {
+    margin: 0;
+    color: white;
+    font-size: 24px;
+    padding: 25px;
+}
