@@ -1,0 +1,22 @@
+{
+    "name": "dummy",
+    "version": "1.0.0",
+    "scripts": {
+        "eslint": "npx eslint src",
+        "eslint:fix": "npx eslint --fix",
+        "prettier": "prettier src --check",
+        "prettier:fix": "prettier src --write"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "17.1.1",
+        "@commitlint/config-conventional": "17.1.0",
+        "commitizen": "4.2.5",
+        "cz-conventional-changelog": "3.3.0",
+        "eslint": "7.18.0",
+        "eslint-config-prettier": "8.5.0",
+        "generate-changelog": "1.8.0",
+        "prettier": "2.7.1",
+        "@typescript-eslint/eslint-plugin": "5.35.1",
+        "@typescript-eslint/parser": "5.35.1"
+    }
+}
